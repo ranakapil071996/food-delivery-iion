@@ -6,7 +6,7 @@
  * @param {React.InputHTMLAttributes<HTMLInputElement>} [props.rest] - All other standard input props.
  */
 function Input({ label, rightIcon, rightIconClick, error, ...rest }) {
-  console.log(error)
+  
   return (
     <>
       <div className="relative">

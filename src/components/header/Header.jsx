@@ -1,11 +1,14 @@
+import { useDispatch } from 'react-redux'
 import CartBadge from '../home/CartBadge'
 import Logo from '../logo/Logo'
 import Avatar from './Avatar'
 import Menu from './Menu'
 import SearchBar from './SearchBar'
+import { removeAuth } from '../../redux/slices/userSlice'
 
 function Header() {
-  
+  const dispatch = useDispatch()
+
   return (
     <div className="flex-col flex items-center">
       <nav className='p-4 border-grey-light-new border-b w-full flex justify-center'>
@@ -25,7 +28,9 @@ function Header() {
               <CartBadge />
               <Avatar />
               <div className='h-8 w-[1px] bg-grey-light-new lg:hidden'></div>
-              <Menu />
+              <div onClick={() => dispatch(removeAuth())}>
+                <Menu />
+              </div>
             </div>
           </section>
         </div>

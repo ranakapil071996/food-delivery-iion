@@ -9,6 +9,7 @@ export const loginApi = baseApi.injectEndpoints({
         body,
         method: 'POST',
       }),
+      extraOptions: { showErrorMessage: true }
     })
   }),
 });

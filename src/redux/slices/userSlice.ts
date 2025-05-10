@@ -1,22 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { getToken } from '../../utils';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  isAuth: Boolean(getToken()),
-  atoken: getToken() || '',
+  token: "",
 };
 
 export const userSlice = createSlice({
   initialState,
-  name: 'user',
+  name: "user",
   reducers: {
     setAuth: (state, action) => {
-      state.isAuth = true;
-      state.atoken = action.payload;
+      state.token = action.payload;
     },
     removeAuth: (state) => {
-      state.isAuth = false;
-      state.atoken = '';
+      state.token = "";
     },
   },
 });
