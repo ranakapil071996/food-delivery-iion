@@ -34,7 +34,7 @@ A fully responsive full-stack food delivery application with login, category fil
 ## 🧰 Tech Stack & Libraries
 
 - **Frontend:** React, TypeScript, Vite, TailwindCSS, React Hook Form
-- **State Management:** Redux Toolkit, Redux Persist
+- **State Management:** Redux Toolkit, Redux Persist, RTK Query
 - **Backend:** Node.js, Express, MongoDB, JWT
 
 ---
