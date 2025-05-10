@@ -17,8 +17,17 @@ A fully responsive full-stack food delivery application with login, category fil
 - 🏠 Home screen with category filter functionality
 - ✅ Integrated Login API
 - 🔄 Login state persists on page refresh
-- 🛠️ Signup screen not available — create users via Postman
 - 📱 Fully responsive website
+
+---
+
+## ✨ Things to Remember
+
+- 🛠️ **Signup Screen Not Implemented**  
+  User registration is not available through the UI. You can create users manually using Postman or any API testing tool.
+
+- 🛠️ **Logout Action via Menu**  
+  The logout functionality can be accessed by clicking the Menu (hamburger icon). The logout button is not part of the original design, so it was added for testing purposes only.
 
 ---
 
