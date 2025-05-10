@@ -1,12 +1,22 @@
-# React + Vite
+# Feature
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend working with Login API
+Login with validation working
+Signup screen is not provided so you can create user by postman
+Filter with category is also functional
+Complete Responsive website
 
-Currently, two official plugins are available:
+# Tech Stack And Libraries
+React, Typescript, Express, NodeJs, React hook forms, TailwindCSS, Vite, MongoDB
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# How to run project locally
+There are two env files. Simply change envSample to .env and fill values in that
+--RUN `npm run install:all` (This will install deps on both client and server)
+--RUN `npm run dev` (This will run project locally)
 
-## Expanding the ESLint configuration
+# Project Hosted
+Project link `https://food-delivery-iion.vercel.app/`
+Server hosted link `https://food-delivery-iion.onrender.com`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+NOTE: This two applications are hosted on Free service plan if these services will not respond to you (Sometimes happens due to inactivity).
+Do let me know at `rana.kapil071996@gmail.com` I will redeploy them

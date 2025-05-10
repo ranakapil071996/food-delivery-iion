@@ -1,0 +1,3 @@
+MONGO_URI=your local mongoDB URL or hosted URL
+JWT_SECRET=any random string you want
+ALLOWED_SERVER=frontend running url for local you can use (http://localhost:5173/)
