@@ -83,7 +83,7 @@ const LoginLeft = () => {
           )}
         />
       </div>
-      <Button disabled={isLoading} type="submit">Login</Button>
+      <Button disabled={isLoading} type="submit">{isLoading ? "Loading..." : "Login"}</Button>
       <div className="text-primary mt-7 text-center cursor-pointer text-sm leading-4 font-bold">Forgot password</div>
       <div className="absolute bottom-8 lg:bottom-10 flex justify-center w-full left-0">
         <p className="text-grey-dark text-sm leading-4 text-center">Don't have an account? <span className="font-bold text-primary cursor-pointer">Sign up</span></p>
