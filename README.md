@@ -11,6 +11,15 @@ A fully responsive full-stack food delivery application with login, category fil
 
 ---
 
+### 🔐 Test Credentials
+
+You can use the following credentials to log in and test the application:
+
+- **Username:** `kapil.rana@iion.io`  
+- **Password:** `12345678`
+
+---
+
 ## ✨ Features
 
 - 🔐 Login screen with validation
