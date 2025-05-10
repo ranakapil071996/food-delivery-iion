@@ -17,6 +17,11 @@ app.use(cors(corsOptions));
 
 connectDB();
 app.use(express.json());
+
+app.get("/", (_req, res) => {
+  res.status(200).send("Server is running OK");
+});
+
 app.use("/api/auth", authRoutes);
 
 app.listen(PORT, () => {
