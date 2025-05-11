@@ -18,7 +18,7 @@ function Input({ label, rightIcon, rightIconClick, error, ...rest }) {
             type="text"
             {...rest}
           />
-          {rightIcon && <img src={rightIcon} className={`absolute right-3 ${Boolean(rightIconClick) && ' cursor-pointer'}`} />}
+          {rightIcon && <img onClick={rightIconClick} src={rightIcon} className={`absolute right-3 ${Boolean(rightIconClick) && ' cursor-pointer'}`} />}
         </div>
         {error && <p className="text-red-500 text-xs absolute bottom-[-16px]">{error}</p>}
       </div>

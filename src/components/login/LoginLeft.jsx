@@ -8,8 +8,10 @@ import { REGEX } from "../../utils/constants"
 import { useLoginMutation } from "../../redux/api/loginApi"
 import { useDispatch } from "react-redux"
 import { setAuth } from "../../redux/slices/userSlice"
+import { useState } from "react"
 
 const LoginLeft = () => {
+  const [toggleType, setToggleType] = useState(true)
   const [loginUser, { isLoading }] = useLoginMutation();
   const dispatch = useDispatch();
   const { control, handleSubmit } = useForm({ defaultValues: { username: '', password: '' } });
@@ -61,8 +63,9 @@ const LoginLeft = () => {
                 rightIcon={EyeOn}
                 placeholder="min. 8 characters"
                 label="Password"
-                type="password"
+                type={toggleType ? "password" : "text"}
                 error={error?.message}
+                rightIconClick={() => setToggleType(!toggleType)}
               />
             )}
           />
